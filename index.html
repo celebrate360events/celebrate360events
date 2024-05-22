@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="navigation-header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow">
+        <div class="container-fluid nav-body">
+          <a class="navbar-brand" href="#">Event Managment</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#knowmore">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true" href="#gallery"
+                  >Gallery</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true" href="AboutUs.html"
+                  >About Me</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true" href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="main-container">
+      <div class="banner-carousel">
+        <div class="carousel">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img
+                  src="/assets/event-banner-2.jpg"
+                  class="d-block w-100 carousel-img"
+                  alt="..."
+                />
+                <div class="carousel-caption">
+                  <h3>CORPORATE EVENTS</h3>
+                  <p>we host a corporate event</p>
+                  <a href="#knowmore" class=" "
+                    ><button type="button" class="btn knowmore">
+                      Know More
+                    </button></a
+                  >
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="/assets/event_banner3.jpg"
+                  class="d-block w-100 carousel-img"
+                  alt="..."
+                />
+                <div class="carousel-caption">
+                  <h3>BIRTHDAY EVENTS</h3>
+                  <p>we host a corporate event</p>
+                  <a href="#knowmore" class=" "
+                    ><button type="button" class="btn knowmore">
+                      Know More
+                    </button></a
+                  >
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img
+                  src="/assets/event-banner.jpg"
+                  class="d-block w-100 carousel-img"
+                  alt="..."
+                />
+                <div class="carousel-caption">
+                  <h3>WEDDING EVENTS</h3>
+                  <p>we host a corporate event</p>
+                  <a href="#knowmore" class=" "
+                    ><button type="button" class="btn knowmore">
+                      Know More
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="counters-section">
+      <div class="container">
+        <div id="" class="counts">
+          <div class="row">
+            <div class="col-md-3 col-sm-12 text-center">
+              <div class="count-card">
+                <div class="counter" id="counter1" data-target="56">0</div>
+                <h5 class="counter-text">Events Done</h5>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-12 text-center">
+              <div class="counter" id="counter2" data-target="12">0</div>
+              <h5 class="counter-text">Shows Hosted</h5>
+            </div>
+            <div class="col-md-3 col-sm-12 text-center">
+              <div class="counter" id="counter3" data-target="15">0</div>
+              <h5 class="counter-text">Birthday Parties</h5>
+            </div>
+            <div class="col-md-3 col-sm-12 text-center">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="counter" id="counter3" data-target="100">0</div>
+                <div class="material-icons-outlined counter-add">add</div>
+              </div>
+
+              <h5 class="counter-text">Happy customers</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span id="knowmore" class="anchor"></span>
+    <div class="parallax-section">
+      <div class="d-flex info-section wedding-bg">
+        <div class="card-text-section">
+          <div class="card">
+            <div class="card-body">
+              <h3>Wedding Planning</h3>
+              <div class="border-bottom"></div>
+              <p>
+                Every couple is unique, and your wedding should be a true
+                reflection of the two of you. We take the time to get to know
+                you in order to create a celebration that’s a truly personal and
+                memorable experience. Experts in the art of the timeline and
+                design, our team handles the details with precision and genuine
+                care, so you and your guests can simply relax and enjoy. We
+                specialize in Napa and Sonoma wedding planning along with
+                Northern California.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="image-section">
+          <div class="image-border">
+            <img src="/assets/wedding-plan.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="parallax"></div>
+      <div class="d-flex info-section corporate-bg">
+        <div class="image-section">
+          <div class="image-border">
+            <img src="/assets/corporate-img.jpg" />
+          </div>
+        </div>
+        <div class="card-text-section">
+          <div class="card">
+            <div class="card-body">
+              <h3>Corporate Planning</h3>
+              <div class="border-bottom"></div>
+              <p>
+                Every couple is unique, and your wedding should be a true
+                reflection of the two of you. We take the time to get to know
+                you in order to create a celebration that’s a truly personal and
+                memorable experience. Experts in the art of the timeline and
+                design, our team handles the details with precision and genuine
+                care, so you and your guests can simply relax and enjoy. We
+                specialize in Napa and Sonoma wedding planning along with
+                Northern California.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax_2"></div>
+      <div class="d-flex info-section birthday-bg">
+        <div class="card-text-section">
+          <div class="card">
+            <div class="card-body">
+              <h3>Birthday Planning</h3>
+              <div class="border-bottom"></div>
+              <p>
+                Every couple is unique, and your wedding should be a true
+                reflection of the two of you. We take the time to get to know
+                you in order to create a celebration that’s a truly personal and
+                memorable experience. Experts in the art of the timeline and
+                design, our team handles the details with precision and genuine
+                care, so you and your guests can simply relax and enjoy. We
+                specialize in Napa and Sonoma wedding planning along with
+                Northern California.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="image-section">
+          <div class="image-border">
+            <img src="/assets/birthday-plan.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="parallax_3"></div>
+      <div class="d-flex info-section event-bg">
+        <div class="image-section">
+          <div class="image-border">
+            <img src="/assets/event-plan.jpg" />
+          </div>
+        </div>
+        <div class="card-text-section">
+          <div class="card">
+            <div class="card-body">
+              <h3>Event Planning</h3>
+              <div class="border-bottom"></div>
+              <p>
+                Every couple is unique, and your wedding should be a true
+                reflection of the two of you. We take the time to get to know
+                you in order to create a celebration that’s a truly personal and
+                memorable experience. Experts in the art of the timeline and
+                design, our team handles the details with precision and genuine
+                care, so you and your guests can simply relax and enjoy. We
+                specialize in Napa and Sonoma wedding planning along with
+                Northern California.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span id="gallery" class="anchor"></span>
+    <div id="" class="gallery-section pt-5">
+      <h3 class="gallery-title mb-4">Gallery</h3>
+      <div class="grid-container">
+        <div class="item">
+          <img src="assets/birthday-card.jpg" class="grid_img" />
+        </div>
+        <div class="item">
+          <img src="assets/birthday-plan.jpg" class="grid_img" />
+        </div>
+        <div class="item">
+          <img src="assets/corporate-img.jpg" class="grid_img" />
+        </div>
+        <div class="item">
+          <img src="assets/count-bf.jpg" class="grid_img" />
+        </div>
+        <div class="item">
+          <img src="assets/event-plan.jpg" class="grid_img" />
+        </div>
+        <div class="item">
+          <img src="assets/event-parallalax.jpg" class="grid_img" />
+        </div>
+        <div class="item">
+          <img src="assets/party-bg.jpg" class="grid_img" />
+        </div>
+        <div class="item">
+          <img src="assets/wedding-bg-parallalax.jpg" class="grid_img" />
+        </div>
+      </div>
+    </div>
+    <div class="testimonials-section">
+      <div class="container">
+        <h3 class="gallery-title testimonials-title">TESTIMONIALS</h3>
+
+        <div class="testimonial-carousel">
+          <div class="w-100">
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="mt-4">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <div class="card testimonial-card">
+                    <div class="card-body">
+                      <div class="row m-0">
+                        <div class="col-md-4 d-flex justify-content-center">
+                          <div class="testimonial-profile">
+                            <img
+                              src="/assets/testimonial-profile"
+                              class="testimonial-profile"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="message-text">
+                            <i class="message"
+                              >Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Culpa deserunt aut quidem harum
+                              recusandae laudantium accusantium modi delectus
+                              ducimus? Consequuntur rem dolores iure
+                              exercitationem beatae suscipit necessitatibus
+                              animi est deleniti?</i
+                            >
+                            <p class="profile-name">- JOE</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <div class="card testimonial-card">
+                    <div class="card-body">
+                      <div class="row m-0">
+                        <div class="col-md-12">
+                          <div class="message-text">
+                            <i
+                              >Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Culpa deserunt aut quidem harum
+                              recusandae laudantium accusantium modi delectus
+                              ducimus? Consequuntur rem dolores iure
+                              exercitationem beatae suscipit necessitatibus
+                              animi est deleniti?</i
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <div class="card testimonial-card">
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Culpa deserunt aut quidem harum recusandae laudantium
+                      accusantium modi delectus ducimus? Consequuntur rem
+                      dolores iure exercitationem beatae suscipit necessitatibus
+                      animi est deleniti?
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span id="contact" class="anchor"></span>
+    <div class="contact-us">
+      <div class="row m-0">
+        <div class="col-md-4">
+          <div class="address-logo">
+            <div class="event-logo"><h4>Event Logo</h4></div>
+            <div class="address">
+              <img src="Images/logo.png" width="100" height="100">
+              <p>XXXXX XX XXXX</p>
+              <p>YYYY</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="">
+            <div class="event-logo"><h5>Follow Us On</h5></div>
+            <div class="social-media logos">
+              <span class="facebook"
+                ><a href="#"><i class="bi bi-facebook"></i></a
+              ></span>
+              <span class="instagram"
+                ><a href="#"><i class="bi bi-instagram"></i></a
+              ></span>
+              <span class="instagram"
+                ><a href="#"><i class="bi bi-threads"></i></a
+              ></span>
+              <span
+                ><a href="#"><i class="bi bi-threads"></i></a
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="navigation-footer">
+            <ul class="footer-nav-links">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#knowmore">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(".nav-link").on("click", function () {
+        $(".navbar").find(".active").removeClass("active");
+        $(this).addClass("active");
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        var counters = $(".counter");
+        var windowHeight = $(window).height();
+
+        // Function to start counter animation when element is in view
+        function startCounters() {
+          counters.each(function () {
+            var $this = $(this);
+            var target = parseInt($this.attr("data-target"));
+
+            $this.prop("Counter", 0).animate(
+              {
+                Counter: target,
+              },
+              {
+                duration: 3000,
+                easing: "linear",
+                step: function (now) {
+                  $this.text(Math.ceil(now));
+                },
+              }
+            );
+          });
+        }
+
+        // Check if counters are in view on page load
+        $(window).on("load resize scroll", function () {
+          var windowTop = $(window).scrollTop();
+          var windowBottom = windowTop + windowHeight;
+          var elementTop = $(".counter").offset().top;
+
+          // If the top of the counter element is in view
+          if (windowBottom > elementTop) {
+            startCounters();
+            $(window).off("scroll"); // Remove scroll event listener after animation starts
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
